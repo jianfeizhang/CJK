@@ -15,7 +15,7 @@
 % \usepackage{unicode-math}
 % \setmainfont{XITS}
 % \setmathfont{XITS Math}
-\defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符
+\defaultfontfeatures{Mapping=tex-text} %避免一些 tex 特殊字符无法正常使用，比如连字符
 
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep,leftmargin=*,labelindent=0pt,topsep=0pt}
@@ -38,9 +38,9 @@
 \usepackage[left=4pc,right=4pc,top=5pc,bottom=8pc]{geometry}
 \setlength{\columnsep}{.8cm}
 \setlength\parindent{2em}
-\renewcommand{\baselinestretch}{1} %定义行间距
-\renewcommand{\CJKglue}{\hskip 20pt plus 0.08\baselineskip}%定义字符间距
-\date{}  % 这一行用来去掉默认的日期显示
+\renewcommand{\baselinestretch}{1} %行间距
+\renewcommand{\CJKglue}{\hskip 20pt plus 0.08\baselineskip}%字符间距
+\date{}  % 去掉默认的日期显示
 
 %----------------------------
 \newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
