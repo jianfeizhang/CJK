@@ -1,0 +1,58 @@
+\usepackage{fancyhdr}
+\pagestyle{plain}
+% \usepackage{zhspacing}
+% \usepackage[active]{zhmath}
+% \usepackage{fontspec}%xelatex \B\C defined
+%---------CJK------------
+% \usepackage[indentfirst]{xeCJK}
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+\setCJKsansfont{Source Han Sans CN}
+\setCJKmonofont{FandolFang}
+% \usepackage[active]{srcltx}
+% \usepackage[mathscr]{euscript}
+% \usepackage{mathrsfs}+
+
+% \usepackage{unicode-math}
+% \setmainfont{XITS}
+% \setmathfont{XITS Math}
+\defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符
+
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,leftmargin=*,labelindent=0pt,topsep=0pt}
+\setlist[enumerate]{noitemsep,leftmargin=*,labelindent=0pt,topsep=0pt,partopsep=0pt}
+
+\input{hyperref}
+ \renewcommand\abstractname{摘　要}
+ \renewcommand\refname{参考文献}
+ \renewcommand\tablename{表}
+ \renewcommand\figurename{图}
+ \renewcommand\algorithmcfname{算法}
+ \renewcommand\figureautorefname{图}
+ \renewcommand\equationautorefname{式}
+ \renewcommand\tableautorefname{表}
+ \renewcommand\algorithmautorefname{算法}
+% \pagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  lengths
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[left=4pc,right=4pc,top=5pc,bottom=8pc]{geometry}
+\setlength{\columnsep}{.8cm}
+\setlength\parindent{2em}
+\renewcommand{\baselinestretch}{1} %定义行间距
+\renewcommand{\CJKglue}{\hskip 20pt plus 0.08\baselineskip}%定义字符间距
+\date{}  % 这一行用来去掉默认的日期显示
+
+%----------------------------
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}%     四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
+%------------------------------------------------------
